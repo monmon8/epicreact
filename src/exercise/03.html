@@ -7,9 +7,10 @@
   <script src="https://unpkg.com/react-dom@16.13.1/umd/react-dom.development.js"></script>
   <script src="https://unpkg.com/@babel/standalone@7.9.3/babel.js"></script>
   <script type="text/babel"> const greeting ="Hello World"
-    const myClassName = "container" 
-    const element = <div className={myClassName.toUpperCase()}> {greeting}
-  </div> 
+  const myClassName = "container" 
+  const props = {children, className}
+  const element = <div id="mything" className = "default" {...props} />
+  
   
   ReactDOM.render(element, document.getElementById('root')) </script>
 </body>
